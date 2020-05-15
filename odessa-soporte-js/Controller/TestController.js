@@ -1,4 +1,5 @@
 @Scope(value = "session")
+//visto bueno QA
 @Component(value = "jsfController")
 public class TestsController {
  
