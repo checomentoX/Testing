@@ -20,7 +20,7 @@ public class TestDao implements Dao<Todo> {
         todoList.add(todo);
         int index = todoList.size() - 1;
         todo.setId(index);
-        return "hello";
+        return "";
     }
  
     @Override
