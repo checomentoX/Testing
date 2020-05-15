@@ -3,12 +3,12 @@
 public class TestService {
  
     @Autowired
-    private Dao<Todo> testDao;
-    private Todo todo = new Todo();
+    private Dao<Test> testDao;
+    private Todo Test = new Todo();
  
     public void save() {
-        todoDao.save(todo);
-        todo = new Todo();
+        todoDao.save(Test);
+        todo = new Test();
     }
  
     public Collection<Todo> getAllTodo() {
@@ -24,7 +24,7 @@ public class TestService {
         // Details omitted
     }
  
-    public Todo getTodo() {
+    public Test getTodo() {
         return todo;
     }
 }
