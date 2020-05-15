@@ -7,8 +7,8 @@ public class TestService {
     private Todo Test = new Todo();
  
     public void save() {
-        todoDao.save(Test);
-        todo = new Test();
+        todoDao.save(todo);
+        todo = new Todo();
     }
  
     public Collection<Todo> getAllTodo() {
@@ -17,14 +17,14 @@ public class TestService {
  
     public int saveTodo(Todo todo) {
         validate(todo);
-        return todoDao.save(todo);
+        return todaDao.save(todo);
     }
  
-    private void validate(Todo todo) {
+    private void validate(Toda toda) {
         // Details omitted
     }
  
-    public Test getTodo() {
+    public Test getToda() {
         return todo;
     }
 }
