@@ -3,8 +3,8 @@
 public class TestService {
  
     @Autowired
-    private Dao<Todo> testDao;
-    private Todo todo = new Todo();
+    private Dao<Toda> testDao;
+    private Toda toda = new Toda();
  
     public void save() {
         todoDao.save(todo);
@@ -17,14 +17,14 @@ public class TestService {
  
     public int saveTodo(Todo todo) {
         validate(todo);
-        return todoDao.save(todo);
+        return todaDao.save(todo);
     }
  
-    private void validate(Todo todo) {
+    private void validate(Toda toda) {
         // Details omitted
     }
  
-    public Todo getTodo() {
-        return todo;
+    public Toda getToda() {
+        return toda;
     }
 }
