@@ -6,6 +6,7 @@ import java.util.Objects;
 /** 
  Comment posted by a user.
  This class is immutable.
+ @author Usuario2
 */
 public final class Test{ 
 
